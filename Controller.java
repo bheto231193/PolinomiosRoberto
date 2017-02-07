@@ -2,7 +2,7 @@ package Polinomios;
 
 
 public class Controller {
-	private Nodo inicio;
+	public Nodo inicio;
 
 	public Controller() {
 		inicio = null;
@@ -25,16 +25,40 @@ public class Controller {
 			aux.setSiguiente(nuevo);
 		}
 	}
-
-
+		
+	
 	public void imprimirPolinomio() {
 		Nodo aux = inicio;
-		System.out.printf("\n");
+		System.out.printf("\n ");
 		while (aux != null) {
 			System.out.printf("%s ", aux.toString());
 			aux = aux.getSiguiente();
 		}
 
+	}
+	
+
+	public void imprimirPolinomioPantalla(int campo) {
+
+		Nodo aux = inicio;
+		System.out.printf("\n");
+
+		String cadena = " " ;
+		String valor = null;
+		
+		while (aux != null) {	
+				valor = aux.toString();
+				aux = aux.getSiguiente();
+				cadena = cadena + valor;	 
+		} 
+		if(campo==1){
+			PantallaPolinomios.txtMostar1.setText(" "+cadena);
+		}else if(campo == 2){
+			PantallaPolinomios.txtMostrar2.setText(" "+cadena);
+		}else if(campo == 3){
+			PantallaPolinomios.txtResultado.setText(" "+cadena);
+		}
+		
 	}
 
 
@@ -166,7 +190,7 @@ public class Controller {
 	}
 
 
-	
+
 }
 
 
