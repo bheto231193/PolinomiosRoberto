@@ -30,7 +30,7 @@ public class Nodo {
 	
 	public String toString(){
 		
-		String a=this.dato.getCoeficiente()+"x^"+this.dato.getExponente();
+		String a=this.dato.getCoeficiente()+" "+"x"+this.dato.getExponente()+"  ";
 		return a;
 		
 	}
