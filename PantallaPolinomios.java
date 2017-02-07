@@ -52,6 +52,8 @@ public class PantallaPolinomios extends JFrame {
 		Controller lista1 = new Controller();
 		Controller lista2 = new Controller();
 		
+		
+		
 		JButton btnMultiplicacion = new JButton("Multiplicar");
 		btnMultiplicacion.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
@@ -109,11 +111,11 @@ public class PantallaPolinomios extends JFrame {
 				 int coeficiente =Integer.parseInt(txtCoeficiente1.getText());
 		         int exponente= Integer.parseInt(txtExponente1.getText());
 		 		 lista1.insertar(coeficiente,exponente);
-		 		 JOptionPane.showMessageDialog(null,"registro agregado con exito a la lista 1"); 
+		 		 JOptionPane.showMessageDialog(null," agregado a la lista 1"); 
 	
 			}
 		});
-		btnAgregarNodo1.setBounds(56, 83, 100, 32);
+		btnAgregarNodo1.setBounds(56, 83, 120, 32);
 		contentPane.add(btnAgregarNodo1);
 		
 		
@@ -125,11 +127,11 @@ public class PantallaPolinomios extends JFrame {
 				 int coeficiente =Integer.parseInt(txtCoeficiente2.getText());
 		         int exponente= Integer.parseInt(txtExponente2.getText());
 		 		 lista2.insertar(coeficiente,exponente);
-		 		 JOptionPane.showMessageDialog(null,"registro agregado con exito a la lista 2");    
+		 		 JOptionPane.showMessageDialog(null," agregado a la lista 2");    
 	
 			}
 		});
-		btnAgregarNodo2.setBounds(399, 83, 100, 32);
+		btnAgregarNodo2.setBounds(399, 83, 120, 32);
 		contentPane.add(btnAgregarNodo2);
 		
 
@@ -170,7 +172,7 @@ public class PantallaPolinomios extends JFrame {
 				
 			}
 		});
-		btnMostrar1.setBounds(56, 219, 116, 23);
+		btnMostrar1.setBounds(56, 219, 140, 23);
 		contentPane.add(btnMostrar1);
 		
 		JButton btnMostrar2 = new JButton("MOSTRAR LISTA");
@@ -179,7 +181,7 @@ public class PantallaPolinomios extends JFrame {
 				lista2.imprimirPolinomioPantalla(2);
 			}
 		});
-		btnMostrar2.setBounds(56, 329, 116, 23);
+		btnMostrar2.setBounds(56, 329, 140, 23);
 		contentPane.add(btnMostrar2);
 		
 		
@@ -224,11 +226,11 @@ public class PantallaPolinomios extends JFrame {
 		
 	
 		JLabel lblLista = new JLabel("Agregar a lista 1");
-		lblLista.setBounds(56, 11, 81, 14);
+		lblLista.setBounds(56, 11, 100, 14);
 		contentPane.add(lblLista);
 		
 		JLabel lblLista_1 = new JLabel("Agregar a lista 2");
-		lblLista_1.setBounds(413, 11, 81, 14);
+		lblLista_1.setBounds(413, 11, 100, 14);
 		contentPane.add(lblLista_1);		
 		
 		JLabel lblResultado = new JLabel("Resultado");
@@ -236,32 +238,30 @@ public class PantallaPolinomios extends JFrame {
 		contentPane.add(lblResultado);
 		
 		JLabel lblListaNumero = new JLabel("Lista numero 2");
-		lblListaNumero.setBounds(28, 273, 83, 14);
+		lblListaNumero.setBounds(28, 273, 95, 14);
 		contentPane.add(lblListaNumero);
 		
 		JLabel lblListaNumero_1 = new JLabel("Lista numero 1");
-		lblListaNumero_1.setBounds(28, 163, 83, 14);
+		lblListaNumero_1.setBounds(28, 163, 95, 14);
 		contentPane.add(lblListaNumero_1);
 		
 		JLabel lblCoeficiente = new JLabel("Coeficiente");
-		lblCoeficiente.setBounds(30, 36, 58, 14);
+		lblCoeficiente.setBounds(30, 36, 65, 14);
 		contentPane.add(lblCoeficiente);
 		
 		JLabel lblExponente = new JLabel("Exponente");
-		lblExponente.setBounds(112, 36, 60, 14);
+		lblExponente.setBounds(112, 36, 65, 14);
 		contentPane.add(lblExponente);
 		
 		JLabel lblCoeficiente_1 = new JLabel("Coeficiente");
-		lblCoeficiente_1.setBounds(374, 36, 60, 14);
+		lblCoeficiente_1.setBounds(374, 36, 65, 14);
 		contentPane.add(lblCoeficiente_1);
 		
 		JLabel lblExponente_1 = new JLabel("Exponente");
-		lblExponente_1.setBounds(459, 36, 60, 14);
+		lblExponente_1.setBounds(459, 36, 65, 14);
 		contentPane.add(lblExponente_1);
 		
 		
-		JLabel lblNewLabel = new JLabel("New label");
-		lblNewLabel.setBounds(65, 219, 46, 14);
-		contentPane.add(lblNewLabel);
+		
 	}
 }
