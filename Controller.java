@@ -37,7 +37,6 @@ public class Controller {
 
 	}
 	
-
 	public void imprimirPolinomioPantalla(int campo) {
 
 		Nodo aux = inicio;
@@ -60,7 +59,6 @@ public class Controller {
 		}
 		
 	}
-
 
 	public void ordenarPolinomio() throws ListaVaciaException {
 		if (inicio == null) {
@@ -188,6 +186,24 @@ public class Controller {
 		simplificar();
 
 	}
+	
+	public void divicionPolinomios(Controller PolinomioDivicion)throws ListaVaciaException{
+		
+			
+		
+	
+	}
+	
+
+	
+	public void Resolver (){
+		
+		
+		
+	}
+	
+	
+	
 
 
 

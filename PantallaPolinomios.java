@@ -185,9 +185,6 @@ public class PantallaPolinomios extends JFrame {
 		contentPane.add(btnMostrar2);
 		
 		
-		
-		
-		
 		txtCoeficiente1 = new JTextField();
 		txtCoeficiente1.setBounds(28, 52, 60, 20);
 		contentPane.add(txtCoeficiente1);
